@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transactionprocessing
+  labels:
+    app: transactionprocessing
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: transactionprocessing
+  template:
+    metadata:
+      labels:
+        app: transactionprocessing
+    spec:
+      containers:
+        - name: transactionprocessing
+          image: docker.io/alexsotoharness/transactionprocessing:latest
+          ports:
+            - containerPort: 8080
