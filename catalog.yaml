@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
-projectIdentifier: soto_sandbox
-project_name: soto_sandbox
-orgIdentifier: sandbox
-org_name: Sandbox
+#projectIdentifier: soto_sandbox
+#project_name: soto_sandbox
+#orgIdentifier: sandbox
+#org_name: Sandbox
 metadata:
   name: transactionprocessing
   description: Securely handles payment authorization, settlement, and reporting in real time using the payment gateway
