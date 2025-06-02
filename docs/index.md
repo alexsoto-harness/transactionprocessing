@@ -1,4 +1,6 @@
-# 🏦 TransactionProcessing Library Documentation
+# TransactionProcessing Library Documentation
+
+## ![BNC Logo](images/Banque_nationale_du_Canada_Logo.png)
 
 Welcome to the technical documentation for the **TransactionProcessing** library, an internal component at Banque Nationale du Canada (BNC).
 
@@ -10,13 +12,13 @@ Welcome to the technical documentation for the **TransactionProcessing** library
 
 ## 📚 Documentation Overview
 
-- [🔍 Debugging & Runbooks](sub-page.md)
-- [💻 Code Examples](code/code-sample.md)
-- [🧩 Plugin & Extension Points](extensions.md)
+- [ Debugging & Runbooks](sub-page.md)
+- [ Code Examples](code/code-sample.md)
+- [ Plugin & Extension Points](extensions.md)
 
 ---
 
-## 🚀 What is TransactionProcessing?
+## 🚀 What is Transaction Processing?
 
 <!-- prettier-ignore -->
 ??? note "Key Features"
@@ -27,7 +29,7 @@ Welcome to the technical documentation for the **TransactionProcessing** library
 
 ---
 
-## 🗺️ System Architecture (Mermaid Diagram)
+## 🗺️ System Architecture
 
 Below is a high-level architecture diagram showing how the TransactionProcessing library interacts with key components:
 
@@ -97,7 +99,7 @@ flowchart TD
 
 ---
 
-## ![BNC Logo](images/Banque_nationale_du_Canada_Logo.png)
+
 
 > _For questions or support, contact the BNC Platform Engineering team._
 

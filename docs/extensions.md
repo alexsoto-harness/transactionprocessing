@@ -88,7 +88,7 @@ See [Code Examples](code/code-sample.md) for integration patterns.
 
 ---
 
-## 📊 Transaction Processing Flow (PlantUML)
+## 📊 Transaction Processing Flow
 
 Below is a UML sequence diagram showing a typical transaction processing flow with extension hooks:
 
