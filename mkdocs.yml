@@ -1,0 +1,12 @@
+site_name: 'Transaction Processing Library Documentation'
+repo_url: https://github.com/alexsoto-harness/transactionprocessing
+edit_uri: edit/main//docs
+
+nav:
+  - Home: index.md
+  - Subpage: sub-page.md
+  - 'Code Sample': code/code-sample.md
+  - Extensions: extensions.md
+
+plugins:
+  - techdocs-core
