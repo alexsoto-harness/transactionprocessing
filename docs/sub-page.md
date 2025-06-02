@@ -1,6 +1,6 @@
 # 🔍 Debugging & Runbooks
 
-Welcome to the in-depth guide for debugging and operating the **TransactionProcessing** library. This page covers common issues, troubleshooting steps, available GitHub Actions (GHA) workflows, and runbooks for rapid resolution.
+Welcome to the in-depth guide for debugging and operating the **Transaction Processing** library. This page covers common issues, troubleshooting steps, available GitHub Actions (GHA) workflows, and runbooks for rapid resolution.
 
 ---
 

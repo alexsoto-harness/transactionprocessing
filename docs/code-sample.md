@@ -1,6 +1,6 @@
 # 💻 Code Examples
 
-This page provides practical examples for integrating the **TransactionProcessing** library into your project, along with a summary of its core features.
+This page provides practical examples for integrating the **Transaction Processing** library into your project, along with a summary of its core features.
 
 ---
 

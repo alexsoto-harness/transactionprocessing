@@ -3,7 +3,7 @@ repo_url: https://github.com/alexsoto-harness/transactionprocessing
 edit_uri: edit/main//docs
 
 nav:
-  - 'TransactionProcessing Library Documentation': index.md
+  - 'Transaction Processing Library Documentation': index.md
   - 'Debugging & Runbooks': sub-page.md
   - 'Code Examples': code-sample.md
   - 'Plugins & Extension Points': extensions.md

@@ -1,6 +1,6 @@
 # 🧩 Plugins & Extension Points
 
-The **TransactionProcessing** library is designed for extensibility, allowing you to adapt transaction workflows to your business needs at Banque Nationale du Canada (BNC). This page explains how to leverage and implement extension points, as well as other advanced features.
+The **Transaction Processing** library is designed for extensibility, allowing you to adapt transaction workflows to your business needs at Banque Nationale du Canada (BNC). This page explains how to leverage and implement extension points, as well as other advanced features.
 
 ---
 

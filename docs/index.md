@@ -1,12 +1,12 @@
-# TransactionProcessing Library Documentation
+# Transaction Processing Library Documentation
 
 ## ![BNC Logo](images/Banque_nationale_du_Canada_Logo.png)
 
-Welcome to the technical documentation for the **TransactionProcessing** library, an internal component at Banque Nationale du Canada (BNC).
+Welcome to the technical documentation for the **Transaction Processing** library, an internal component at Banque Nationale du Canada (BNC).
 
 <!-- prettier-ignore -->
 ???+ info "What is this library?"
-    The TransactionProcessing library streamlines and standardizes transaction workflows across BNC systems, ensuring reliability, traceability, and compliance.
+    The Transaction Processing library streamlines and standardizes transaction workflows across BNC systems, ensuring reliability, traceability, and compliance.
 
 ---
 
@@ -31,11 +31,11 @@ Welcome to the technical documentation for the **TransactionProcessing** library
 
 ## 🗺️ System Architecture
 
-Below is a high-level architecture diagram showing how the TransactionProcessing library interacts with key components:
+Below is a high-level architecture diagram showing how the Transaction Processing library interacts with key components:
 
 ```mermaid
 flowchart TD
-    A[Client Application] --> B(TransactionProcessing Library)
+    A[Client Application] --> B(Transaction Processing Library)
     B --> C(Interac Payment API)
     B --> D(Fraud Detection Service)
     B --> E(Payments Gateway)
