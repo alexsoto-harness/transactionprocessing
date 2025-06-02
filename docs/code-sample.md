@@ -1,31 +1,82 @@
-# Sample Code
+# 💻 Code Examples
 
-This page provides some sample code which may be used in your example component.
+This page provides practical examples for integrating the **TransactionProcessing** library into your project, along with a summary of its core features.
 
-This code uses TypeScript, and the Markdown code fence to wrap the code.
+---
+
+## ✨ Key Features
+
+- **Transaction Lifecycle Management:** Start, process, and finalize transactions with built-in state handling.
+- **Retry Logic:** Automatic retries for transient failures, configurable backoff strategies.
+- **Audit Logging:** Every transaction is logged for traceability and compliance.
+- **Extensible Hooks:** Inject custom business logic at key points in the transaction flow.
+- **Error Handling:** Standardized error reporting and recovery mechanisms.
+
+---
+
+## 🚀 Basic Integration Example
 
 ```typescript
-const serviceEntityPage = (
-  <EntityLayout>
-    <EntityLayout.Route path="/" title="Overview">
-      <Grid container spacing={3} alignItems="stretch">
-        <Grid item md={6}>
-          <EntityAboutCard variant="gridItem" />
-        </Grid>
-      </Grid>
-    </EntityLayout.Route>
-    <EntityLayout.Route path="/docs" title="Docs">
-      <EntityTechdocsContent />
-    </EntityLayout.Route>
-  </EntityLayout>
-);
+import { TransactionProcessor } from '@bnc/transaction-processing';
+
+const processor = new TransactionProcessor();
+
+processor.process({
+  type: 'WIRE_TRANSFER',
+  amount: 2500,
+  currency: 'CAD',
+  onSuccess: (result) => console.log('Transaction successful:', result),
+  onError: (err) => console.error('Transaction failed:', err),
+});
 ```
 
-Here is an example of Python code:
+---
 
-```python
-def getUsersInGroup(targetGroup, secure=False):
+## 🔁 Customizing Retry Logic
 
-    if __debug__:
-        print('targetGroup=[' + targetGroup + ']')
+```typescript
+const processor = new TransactionProcessor({
+  maxRetries: 5,
+  backoffStrategy: 'linear',
+});
 ```
+
+---
+
+## 🪝 Using Extension Hooks
+
+```typescript
+const processor = new TransactionProcessor({
+  hooks: {
+    beforeProcess: (txn) => {
+      // Custom validation or enrichment
+      console.log('About to process:', txn);
+    },
+    afterProcess: (result) => {
+      // Custom post-processing
+      sendNotification(result);
+    },
+  },
+});
+```
+
+---
+
+## 📝 Error Handling Example
+
+```typescript
+try {
+  await processor.process({
+    type: 'BILL_PAYMENT',
+    amount: 100,
+    currency: 'CAD',
+  });
+} catch (error) {
+  // Handle or log the error
+  reportError(error);
+}
+```
+
+---
+
+For more advanced scenarios, see the [Debugging & Runbooks](../sub-page.md) and [Extension Guide](../extensions.md).

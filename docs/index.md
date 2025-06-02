@@ -1,6 +1,10 @@
 # 🏦 TransactionProcessing Library Documentation
 
-Welcome to the technical documentation for the **TransactionProcessing** library, an internal component at Banque Nationale du Canada (BNC). This library is designed to streamline and standardize transaction workflows across our systems, ensuring reliability, traceability, and compliance.
+Welcome to the technical documentation for the **TransactionProcessing** library, an internal component at Banque Nationale du Canada (BNC).
+
+<!-- prettier-ignore -->
+???+ info "What is this library?"
+    The TransactionProcessing library streamlines and standardizes transaction workflows across BNC systems, ensuring reliability, traceability, and compliance.
 
 ---
 
@@ -14,12 +18,30 @@ Welcome to the technical documentation for the **TransactionProcessing** library
 
 ## 🚀 What is TransactionProcessing?
 
-The TransactionProcessing library provides a robust framework for handling financial transactions within BNC’s internal systems. It offers:
+<!-- prettier-ignore -->
+??? note "Key Features"
+    - **Consistent transaction lifecycle management**
+    - **Built-in retry logic** for transient failures
+    - **Comprehensive logging and audit trails**
+    - **Extensible hooks** for custom business logic
 
-- **Consistent transaction lifecycle management**
-- **Built-in retry logic** for transient failures
-- **Comprehensive logging and audit trails**
-- **Extensible hooks** for custom business logic
+---
+
+## 🗺️ System Architecture (Mermaid Diagram)
+
+Below is a high-level architecture diagram showing how the TransactionProcessing library interacts with key components:
+
+```mermaid
+flowchart TD
+    A[Client Application] --> B(TransactionProcessing Library)
+    B --> C(Interac Payment API)
+    B --> D(Fraud Detection Service)
+    B --> E(Payments Gateway)
+    B --> F[(Postgres Database<br/>Cloud Hosted)]
+    C -.-> F
+    D -.-> F
+    E -.-> F
+```
 
 ---
 
@@ -30,6 +52,10 @@ The TransactionProcessing library provides a robust framework for handling finan
    ```bash
    npm install @bnc/transaction-processing
    ```
+
+<!-- prettier-ignore -->
+??? tip "Need help with installation?"
+    Make sure you have access to the internal npm registry. Contact the BNC Platform Engineering team if you encounter issues.
 
 2. **Basic Usage Example:**
 
@@ -47,9 +73,9 @@ The TransactionProcessing library provides a robust framework for handling finan
    });
    ```
 
-3. **Retry Logic:**  
-   By default, the processor retries failed transactions up to 3 times with exponential backoff.  
-   [Learn more about retry behavior & configuration.](sub-page.md#retry-logic)
+<!-- prettier-ignore -->
+???+ note "How do I get support?"
+    You can get support by contacting the BNC Platform Engineering team or by visiting the [Debugging & Runbooks](sub-page.md) section.
 
 ---
 
@@ -77,4 +103,4 @@ The TransactionProcessing library provides a robust framework for handling finan
 
 ---
 
-For more on TechDocs, see the [Backstage TechDocs Overview](https://backstage.io/docs/features/techdocs/).
+For more on TechDocs, see the [Harness IDP TechDocs Overview](https://developer.harness.io/docs/category/techdocs).
