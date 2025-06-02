@@ -31,10 +31,10 @@ spec:
 #  dependsOn:
 #    - component:default/replace-this
 #  system: poc-system
-relations:
-  - type: ownedBy
-    targetRef: group:account/alejandro.soto@harness.io
-    target:
-      kind: user
-      namespace: account
-      name: alejandro.soto@harness.io
+#relations:
+#  - type: ownedBy
+#    targetRef: group:account/alejandro.soto@harness.io
+#    target:
+#      kind: user
+#      namespace: account
+#      name: alejandro.soto@harness.io
