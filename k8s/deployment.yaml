@@ -6,7 +6,7 @@ metadata:
   labels:
     app: transactionprocessing
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: transactionprocessing
