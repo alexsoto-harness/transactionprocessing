@@ -1,3 +1,63 @@
+# Transaction Processing
+
+Securely handles payment authorization, settlement, and reporting in real time using the payment gateway.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Getting Started](#getting-started)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Overview
+
+**Transaction Processing** is a Java-based system designed for secure, real-time payment processing. It supports payment authorization, settlement, and comprehensive reporting, leveraging a robust payment gateway integration.
+
+## Features
+
+- Real-time payment authorization
+- Secure transaction settlement
+- Detailed reporting and transaction history
+- Integration with payment gateway APIs
+- Modular and extensible architecture
+- Infrastructure as code (HCL/Terraform)
+- Docker support for containerized deployment
+
+## Architecture
+
+The system is primarily written in Java, with infrastructure managed via HCL (Terraform) and containerized using Docker.
+
+
+## Getting Started
+
+### Prerequisites
+
+- Java 11 or higher
+- Maven or Gradle
+- Docker (optional, for containerization)
+- Terraform (optional, for infrastructure setup)
+
+### Clone the Repository
+
+```sh
+git clone https://github.com/alexsoto-harness/transactionprocessing.git
+cd transactionprocessing
+
+# Run unit and integration tests
+mvn test
+
+# Or with Gradle
+./gradlew test
+
+
 # transactionprocessing
 
 Welcome to your new Spring Boot application scaffolded using Cookiecutter! This project includes:
