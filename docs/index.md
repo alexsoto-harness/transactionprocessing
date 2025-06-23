@@ -1,6 +1,6 @@
 # Transaction Processing Library Documentation
 
-## ![BNC Logo](images/Banque_nationale_du_Canada_Logo.png)
+<!-- ## ![BNC Logo](images/Banque_nationale_du_Canada_Logo.png) -->
 
 Welcome to the technical documentation for the **Transaction Processing** library, an internal component at Banque Nationale du Canada (BNC).
 
