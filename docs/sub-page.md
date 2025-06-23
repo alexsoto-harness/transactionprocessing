@@ -8,7 +8,7 @@ Welcome to the in-depth guide for debugging and operating the **Transaction Proc
 
 <!-- prettier-ignore -->
 ???+ warn "Warning: Sensitive Data"
-    Always ensure that logs and debugging output do **not** contain sensitive customer or transaction data. Follow BNC compliance guidelines when sharing logs.
+    Always ensure that logs and debugging output do **not** contain sensitive customer or transaction data. Follow Harness compliance guidelines when sharing logs.
 
 ### 1. Transaction Fails with `RETRY_LIMIT_EXCEEDED`
 
@@ -104,7 +104,7 @@ const processor = new TransactionProcessor({
 
 <!-- prettier-ignore -->
 ???+ note "How do I get support?"
-    You can get support by contacting the BNC Platform Engineering team or by visiting the [Debugging & Runbooks](sub-page.md) section.
+    You can get support by contacting the Harness Platform Engineering team or by visiting the [Debugging & Runbooks](sub-page.md) section.
 
 - [Extension Points](extensions.md)
 - [Code Examples](code/code-sample.md)
