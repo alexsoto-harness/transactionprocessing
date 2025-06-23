@@ -2,11 +2,11 @@
 
 <!-- ## ![BNC Logo](images/Banque_nationale_du_Canada_Logo.png) -->
 
-Welcome to the technical documentation for the **Transaction Processing** library, an internal component at Banque Nationale du Canada (BNC).
+Welcome to the technical documentation for the **Transaction Processing** library, an internal component at Harness.
 
 <!-- prettier-ignore -->
 ???+ info "What is this library?"
-    The Transaction Processing library streamlines and standardizes transaction workflows across BNC systems, ensuring reliability, traceability, and compliance.
+    The Transaction Processing library streamlines and standardizes transaction workflows across Harness systems, ensuring reliability, traceability, and compliance.
 
 ---
 
@@ -52,17 +52,17 @@ flowchart TD
 1. **Install the library** (internal package registry):
 
    ```bash
-   npm install @bnc/transaction-processing
+   npm install @harness/transaction-processing
    ```
 
 <!-- prettier-ignore -->
 ??? tip "Need help with installation?"
-    Make sure you have access to the internal npm registry. Contact the BNC Platform Engineering team if you encounter issues.
+    Make sure you have access to the internal npm registry. Contact the Harness Platform Engineering team if you encounter issues.
 
 2. **Basic Usage Example:**
 
    ```typescript
-   import { TransactionProcessor } from '@bnc/transaction-processing';
+   import { TransactionProcessor } from '@harness/transaction-processing';
 
    const processor = new TransactionProcessor();
 
@@ -77,7 +77,7 @@ flowchart TD
 
 <!-- prettier-ignore -->
 ???+ note "How do I get support?"
-    You can get support by contacting the BNC Platform Engineering team or by visiting the [Debugging & Runbooks](sub-page.md) section.
+    You can get support by contacting the Harness Platform Engineering team or by visiting the [Debugging & Runbooks](sub-page.md) section.
 
 ---
 
@@ -101,7 +101,7 @@ flowchart TD
 
 
 
-> _For questions or support, contact the BNC Platform Engineering team._
+> _For questions or support, contact the Harness Platform Engineering team._
 
 ---
 
