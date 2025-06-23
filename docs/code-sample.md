@@ -17,7 +17,7 @@ This page provides practical examples for integrating the **Transaction Processi
 ## 🚀 Basic Integration Example
 
 ```typescript
-import { TransactionProcessor } from '@bnc/transaction-processing';
+import { TransactionProcessor } from '@harness/transaction-processing';
 
 const processor = new TransactionProcessor();
 
