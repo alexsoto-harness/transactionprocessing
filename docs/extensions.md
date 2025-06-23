@@ -1,6 +1,6 @@
 # 🧩 Plugins & Extension Points
 
-The **Transaction Processing** library is designed for extensibility, allowing you to adapt transaction workflows to your business needs at Banque Nationale du Canada (BNC). This page explains how to leverage and implement extension points, as well as other advanced features.
+The **Transaction Processing** library is designed for extensibility, allowing you to adapt transaction workflows to your business needs at Harness. This page explains how to leverage and implement extension points, as well as other advanced features.
 
 ---
 
@@ -10,7 +10,7 @@ You can inject custom logic at key points in the transaction lifecycle using hoo
 
 <!-- prettier-ignore -->
 !!! info
-    Hooks allow you to customize the transaction flow without modifying the core library. Use them for validation, notifications, or integrating with other BNC services.
+    Hooks allow you to customize the transaction flow without modifying the core library. Use them for validation, notifications, or integrating with other Harness services.
 
 **Example: Adding Custom Validation and Notifications**
 
@@ -133,4 +133,4 @@ Service --> User: Result
 
 <!-- prettier-ignore -->
 ???+ note "How do I get support?"
-    You can get support by contacting the BNC Platform Engineering team or by visiting the [Runbooks](sub-page.md) for troubleshooting tips.
+    You can get support by contacting the Harness Platform Engineering team or by visiting the [Runbooks](sub-page.md) for troubleshooting tips.
